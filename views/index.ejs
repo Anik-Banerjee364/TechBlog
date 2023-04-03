@@ -1,0 +1,81 @@
+<div class="row flex-lg-row-reverse align-items-center g-5 py-4 mb-4">
+    <div class="col-12 col-lg-6">
+        <img src="/img/vr.png" width="607" height="510" alt="Cooking" class="d-block max-lg-auto img-fluid">
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <h1 class="display-5 fw-bold mb-3">
+            Wide Variety of Technology Blogs to Keep You Updated !!
+        </h1>
+        <p class="lead">
+            Come and explore wide variety of articles and recent developments in tech - just enough to keep you thinking :-)
+        </p>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="/explore-latest" class="btn btn-primary btn-dark btn-lg px-4 me-md-2">Explore Latest</a>
+            <a href="/random-tech" class="btn btn-outline-secondary btn-lg px-4 me-md-2">Show Random</a>
+
+        </div>
+    </div>
+</div>
+
+<!-- categories start  -->
+
+<!-- <div class="row row-cols-2 row-cols-lg-1 g-2 g-lg-3 py-4"> -->
+
+<h2 class="subheading">Your Daily Dose of Tech</h2>
+<div class="row  row-cols-lg-1 row-cols-sm-1 row-cols-md-1 g-2 g-lg-3 py-4">
+   <% if (categories != ' ') { %>
+      <%  categories.forEach(function(category, index) {%>
+
+            <a href="/categories/<%- category.name %>" class="col text-center category_link">
+                <img src="/img/<%- category.image %>" alt="<%- category.name %>" class="category_img">
+                <h4><%- category.name %></h4>
+            </a>
+     <%   }) %>
+   <% } %>
+    <a href="/categories" class="col text-center category_link">
+        <img src="/img/view-all.jpg" alt="" class="category_img">
+        <h4>View All</h4>
+    </a>
+</div>
+<!-- categories end  -->
+
+
+<!-- latest start -->
+<section class="pb-4 pt-4">
+    <div class="d-flex mb-2 align-items center">
+        <h2>Latest Blogs</h2>
+        <a href="/explore_latest" class="ms-auto">View More</a>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-1 g-2 g-lg-3">
+        <a href="/tech/#" class="col text-center category_link">
+            <img src="/img/vrtech.png" alt="" class="category_img category_img--large">
+            <h4 class="pt-1">Apple and VR</h4>
+        </a>
+    </div>
+</section>
+<!-- latest end -->
+
+<!-- Submit Start -->
+
+<section class="px-4 py-5 my-5 text-center">
+    <img src="/img/publish-blog.jpg" alt="Publish your blog FREE  today" class="d-block mx-auto mb-4 img-fluid" width="566" height="208">
+    <h1 class="display-5 fw-bold">Publish your blog FREE today"</h1>
+    <div>
+        <p class="lead mb-4">
+            Publish your Blog in front of thousands of people for free. Try it now !!!
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="/submit-blog" class="btn btn-primary btn-dark btn-lg">Submit Blog</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Submit end -->
